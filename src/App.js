@@ -10,8 +10,8 @@ function App() {
     let temptime=time+1;
     setTime(temptime)
   }
-  const Reset=()=>{
-    setTime(0);
+  const decrese=()=>{
+    time>1? setTime(time-1):setTime(0);
   }
   
   return (
@@ -21,8 +21,9 @@ function App() {
     today time is {time}
   </h1>
   <button onClick={change}>increse</button>
-  <button onClick={Reset}>Reset</button>
-  <Colorgenerator color="green"/>
+  <button onClick={decrese}>Reset</button>
+  <Colorgenerator/>
+  
   
  
  
