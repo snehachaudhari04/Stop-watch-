@@ -2,6 +2,7 @@
 import './App.css';
 import { useState } from 'react';
 import Colorgenerator from './Component/colorgenerator/colorgenerator';
+import PasswordGenerator from './Component/PasswordGenerator';
 
 
 function App() {
@@ -16,13 +17,11 @@ function App() {
   
   return (
    <>
-   
-  <h1>
-    today time is {time}
-  </h1>
-  <button onClick={change}>increse</button>
-  <button onClick={decrese}>Reset</button>
+  <h1 style={{marginLeft:100}}>Combination of Basic Simple Projects... too get strong command on react</h1>
+  <h2> 1.ColorGenerator</h2>
   <Colorgenerator/>
+  <h2>2.Password Generator</h2>
+  <PasswordGenerator/>
   
   
  

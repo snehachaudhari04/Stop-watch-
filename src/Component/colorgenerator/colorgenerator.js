@@ -4,7 +4,7 @@ import React, { useState } from 'react'
     const[color,setColor]=useState('black')
   return (
     <>
-    <div  className ="container" style={{backgroundColor:color, height:300,weight:300 }}>
+    <div  style={{backgroundColor:color, height:300,weight:300 }}>
          <div >
           <button onClick={()=>setColor('red')}>Red</button>
           <button onClick={()=>setColor('blue')}>Blue</button>
